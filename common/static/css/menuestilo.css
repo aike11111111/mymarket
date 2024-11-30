@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: newfont2;
+    src: url(../font/FEENC___.ttf);
+}
+
+body {
+    background-color: #c0cfcf27 !important;
+}
+
+.navbar{
+    width: 100%;
+    border: 1px solid #9e999950;
+    background-color: #ffffff56 !important;
+}
+
+.container-fluid{
+    height: 87px;
+}
+
+#navbarTogglerDemo{
+    margin-top: 50px;
+    margin-left: -178px;
+}
+
+.navbar-brand{
+    margin-left: 25px;
+    letter-spacing: 10px;
+    margin-top: -40px;
+    font-size: 20px;
+}
+
+.navbar-brand img{
+    margin-left: -13px;
+    margin-top: -5px;
+}
+
+.d-flex{
+    margin-top: -82px;
+    margin-right: 13em;
+    width: 27em;
+    height: 32px;
+}
+
+.btn{
+    font-size: 12px;
+    width: 25%;
+}
+
+.nav-item a{
+    font-size: 14px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.carrito-item img {
+    margin-right: 10px;
+}
+
+#carrito{
+    width: 30px;
+    margin-right: 25px;
+}
+
+.registro-menu a{
+    margin-right: 25px;
+    color: #000;
+    text-decoration: none;
+}
+
+.registro-menu img{
+    width: 35px;
+    margin-right: 5px;
+}
+
+ 

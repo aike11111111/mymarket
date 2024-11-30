@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body{
+    width: 100%;
+    height: 1500px;
+}
+
+.carousel-inner {
+    width: 95%;
+    margin: 0 auto; 
+    margin-top: 35px;
+}
+
+.carousel-inner img{
+    height: 600px;
+}
+
+#btnproductos{
+    position: absolute; 
+    right: 835px; 
+    z-index: 1000; 
+    width: 120px;
+    height: 35px;
+    font-size: 13px;
+    top: 495px;
+    background-color: violet;
+}
+
+.cards-container {
+    width: 96%;
+    margin: 0 auto; 
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(207, 209, 224, 0.075);
+    border: 1px solid #6666772a;
+    box-shadow: 2px 2px 10px rgba(94, 95, 102, 0.514);
+    width: 180px;
+    height: 120px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+    position: relative;
+    margin: 10px;
+    text-align: center; 
+}
+
+.card img {
+    width: 120%;
+    height: 185px;
+    object-fit: cover;
+    position: absolute; 
+    top: -4; 
+}
+
+#torta{
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #d3d1da4d;
+    box-shadow: 2px 2px 10px rgba(143, 141, 146, 0.63);
+}
+
+h2{
+    font-size: 14px;
+    color: rgb(194, 194, 194);
+    margin-left: 70px;
+    margin-top: 18px;
+    letter-spacing: 2px;
+}
+
+#btnproductos {
+    border: none; 
+    margin-right: 1em;
+    margin-top: -8em;
+    cursor: pointer; 
+    border-bottom: 2px solid #4644447c;
+    box-shadow: 1px 1px 10px rgb(43, 49, 53);
+}

@@ -1,0 +1,285 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'common/base_barra_navegacion.html' %}
+    <div class="title-catag">
+        <h1>Catalogo</h1>
+    </div>
+
+    <div class="container-productos">
+        <div class="producto1">
+            <img src="{% static 'img/torta.jpg' %}" alt="Torta Chocolate">
+            <div class="producto-contenido">
+                <a href="#">Torta Chocolate</a>
+                <p class="valor-producto">$14.000</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="torta" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Torta de chocolate" 
+                        data-price="14000"
+                        data-image="{% static 'img/torta.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/papas.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Papas fritas Lay's</a>
+                <p class="valor-producto">$1.990</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="papas" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Papas fritas Lay's" 
+                        data-price="1990"
+                        data-image="{% static 'img/papas.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/queso.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Queso Quilque</a>
+                <p class="valor-producto">$5.990</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="queso" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Queso Quilque" 
+                        data-price="5990"
+                        data-image="{% static 'img/queso.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/helado2.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Helado KitKat</a>
+                <p class="valor-producto">$6.200</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="heladok" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Helado KitKat" 
+                        data-price="6200"
+                        data-image="{% static 'img/helado2.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-productos">
+        <div class="producto1">
+            <img src="{% static 'img/galletas.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Mini Donuts Costa</a>
+                <p class="valor-producto">$1.100</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="minidonuts" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Mini Donuts Costa" 
+                        data-price="1100"
+                        data-image="{% static 'img/galletas.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/afe.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Jugo Manzana Afe</a>
+                <p class="valor-producto">$4.590</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="jugoafe" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Jugo Afe" 
+                        data-price="4590"
+                        data-image="{% static 'img/afe.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/torta3.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Torta con Maní</a>
+                <p class="valor-producto">$12.200</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="tortamani" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Torta con Maní" 
+                        data-price="12200"
+                        data-image="{% static 'img/torta3.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/mayo.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Mayo NotCo</a>
+                <p class="valor-producto">$3.800</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="mayo" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Mayo NotCo" 
+                        data-price="3800"
+                        data-image="{% static 'img/mayo.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-productos">
+        <div class="producto1">
+            <img src="{% static 'img/redbull.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Redbull Purple</a>
+                <p class="valor-producto">$1.720</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="redbullpurple" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Redbull Purple" 
+                        data-price="1720"
+                        data-image="{% static 'img/redbull.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/helado3.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Helado Frambuesa NotCo</a>
+                <p class="valor-producto">$5.890</p>
+                <label for="torta-cantidad"  class="producto-label">Cantidad:</label>
+                <input type="number" name="heladoframb" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Helado Frambuesa NotCo" 
+                        data-price="5890"
+                        data-image="{% static 'img/helado3.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/energetica.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Energetica Monster</a>
+                <p class="valor-producto">$1.790</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="monster" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Energetica Monster" 
+                        data-price="1790"
+                        data-image="{% static 'img/energetica.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/quesoo.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Queso Mantecoso Río Bueno</a>
+                <p class="valor-producto">$5.790</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="quesomantecoso" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Queso Mantecoso Río Bueno" 
+                        data-price="5790"
+                        data-image="{% static 'img/quesoo.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-productos">
+        <div class="producto1">
+            <img src="{% static 'img/bless.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Jugo Bless</a>
+                <p class="valor-producto">$5.189</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="jugobless" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Jugo Bless" 
+                        data-price="5189"
+                        data-image="{% static 'img/bless.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/torta4.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Torta Vainilla</a>
+                <p class="valor-producto">$10.480</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="tortavainilla" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Torta Vainilla" 
+                        data-price="10480"
+                        data-image="{% static 'img/torta4.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/helado.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Helado Chocolate NotCo</a>
+                <p class="valor-producto">$5.690</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="heladochocolate" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Helado Chocolate NotCo" 
+                        data-price="5690"
+                        data-image="{% static 'img/helado.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+        <div class="producto1">
+            <img src="{% static 'img/energetica2.jpg' %}" alt="Imagen de una torta de chocolate">
+            <div class="producto-contenido">
+                <a href="#">Redbull Normal</a>
+                <p class="valor-producto">$1.720</p>
+                <label for="torta-cantidad" class="producto-label">Cantidad:</label>
+                <input type="number" name="redbullnormal" class="producto-cantidad" min="1" value="1">
+                <button type="button" class="btn btn-dark add-product" 
+                        data-name="Redbull Normal" 
+                        data-price="1790"
+                        data-image="{% static 'img/energetica2.jpg' %}"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="product1">
+                    Añadir
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/modal.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>            
+</body>
+</html>

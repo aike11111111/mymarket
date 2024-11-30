@@ -1,0 +1,14 @@
+{% extends 'nuevos_servicios/base_contacto.html' %}
+
+{% block title %} Contacto {% endblock %}
+{% block content %}
+
+<div class="input_container">
+    <form method="post" id="formulario" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-dark">Guardar</button>
+</form>
+</div>
+
+{% endblock %}

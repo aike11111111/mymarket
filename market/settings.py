@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.catalogo',
     'apps.nuevos_servicios',
     'common',
+    'market',
 ]
 
 MIDDLEWARE = [
